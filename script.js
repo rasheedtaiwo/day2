@@ -54,10 +54,10 @@ function drawTime(ctx, radius) {
     (hour * Math.PI) / 6 +
     (minute * Math.PI) / (6 * 60) +
     (second * Math.PI) / (360 * 60);
-  drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+  drawHand(ctx, hour, radius * 0.7, radius * 0.07);
 
   minute = (minute * Math.PI) / 30 + (second * Math.PI) / (30 * 60);
-  drawHand(ctx, minute, radius * 0.5, radius * 0.07);
+  drawHand(ctx, minute, radius * 0.8, radius * 0.07);
 
   second = (second * Math.PI) / 30;
   drawHand(ctx, second, radius * 0.9, radius * 0.02);
